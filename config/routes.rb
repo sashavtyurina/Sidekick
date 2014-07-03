@@ -1,5 +1,6 @@
 Sidekick::Application.routes.draw do
-  get "bug_reports/new"
+  resources :bugs
+
   root 'static_pages#home'
   match '/about', to:'static_pages#about', via: 'get'
   match '/bugs', to:'static_pages#bugs', via: 'get'

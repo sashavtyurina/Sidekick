@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140702140731) do
+ActiveRecord::Schema.define(version: 20140703082401) do
 
-  create_table "bug_reports", force: true do |t|
+  create_table "bugs", force: true do |t|
     t.string   "description"
-    t.string   "appName"
+    t.string   "application_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
