@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def bugs
   end
+
+  def newbug
+  end
 end

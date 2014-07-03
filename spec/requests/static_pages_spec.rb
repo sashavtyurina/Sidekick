@@ -26,14 +26,22 @@ describe "Static pages" do
   	end
   end
 
-  describe "Bug reports" do
-    it "should have the content 'bug reports'" do
-      visit bug_path
-      expect(page).to have_content('bugs')
-    end
-    it "should have the title 'Bugs'" do
-      visit bug_path
-      expect(page).to have_title('Bug reports')
+  # describe "Bug reports" do
+  #   it "should have the content 'bug reports'" do
+  #     visit bug_path
+  #     expect(page).to have_content('bugs')
+  #   end
+  #   it "should have the title 'Bugs'" do
+  #     visit bug_path
+  #     expect(page).to have_title('Bug reports')
+  #   end
+  # end
+
+  describe "newbug page" do
+    it "should have content new " do
+      visit newbug_path
+      #it { should have_content("new") }
+      expect(page).to have_content('new')
     end
   end
 end
