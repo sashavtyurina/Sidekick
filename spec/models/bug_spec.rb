@@ -1,5 +1,9 @@
 require 'spec_helper'
 
 describe Bug do
-  pending "add some examples to (or delete) #{__FILE__}"
+	before {@bug = Bug.new(description:"new description", application_name:"new application_name")}
+	subject { @bug }
+
+	it {should respond_to(:description)}
+	it {should respond_to(:application_name)}
 end
