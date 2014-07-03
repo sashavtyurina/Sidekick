@@ -28,11 +28,11 @@ describe "Static pages" do
 
   describe "Bug reports" do
     it "should have the content 'bug reports'" do
-      visit bugs_path
+      visit bug_path
       expect(page).to have_content('bugs')
     end
     it "should have the title 'Bugs'" do
-      visit bugs_path
+      visit bug_path
       expect(page).to have_title('Bug reports')
     end
   end
